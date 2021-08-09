@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    * Este fichero es parte del plugin PreAsientos de FacturaScripts 2020
+    Document   : asientos.xml
+    Author     : Rafael del Pozo <pozo@us.es>
+    Description:
+        Extensión a la estructura de asientos original, para admitir el número de preasiento del que sale,
+        si lo tiene.
+-->
+<table>
+    <column>
+        <name>idpreasiento</name>
+        <type>integer</type>
+    </column>
+    <constraint>
+        <name>ca_asientos_preasientos</name>
+        <type>FOREIGN KEY (idpreasiento) REFERENCES preasientos (idpreasiento) ON DELETE SET NULL ON UPDATE CASCADE</type>
+    </constraint>
+</table>

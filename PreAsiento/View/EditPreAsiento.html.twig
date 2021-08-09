@@ -1,0 +1,35 @@
+{#
+    /**
+     * This file is part of FacturaScripts
+     * Copyright (C) 2017-2019 Carlos Garcia Gomez <carlos@facturascripts.com>
+     *
+     * This program is free software: you can redistribute it and/or modify
+     * it under the terms of the GNU Lesser General Public License as
+     * published by the Free Software Foundation, either version 3 of the
+     * License, or (at your option) any later version.
+     *
+     * This program is distributed in the hope that it will be useful,
+     * but WITHOUT ANY WARRANTY; without even the implied warranty of
+     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+     * GNU Lesser General Public License for more details.
+     *
+     * You should have received a copy of the GNU Lesser General Public License
+     * along with this program. If not, see http://www.gnu.org/licenses/.
+     *
+     * Este fichero es parte del plugin PreAsientos de FacturaScripts 2020
+     * @author: Rafael del Pozo <pozo@us.es>
+     * Basado en EditAsiento.html.twig. Deja sólo el espacio para el grid, sin gráficos.
+     */
+#}
+{% extends "Master/GridView.html.twig" %}
+
+{% block gridcard %}
+    {# Grid data panel #}
+    <div class="col-12 mr-2">
+        <div class="card shadow">
+            <div class="card-body p-0">
+                <div id="document-lines"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

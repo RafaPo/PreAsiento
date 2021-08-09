@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * This file is a plugin for FacturaScripts
+ * Copyright (C) 2017-2020 Carlos Garcia Gomez <carlos@facturascripts.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Este fichero es parte del plugin PreAsientos de FacturaScripts 2020
+ * @author Rafael del Pozo              <pozo@us.es>
+ * Basado en EditPartida.xml. Muestra sólo el detalle con todos los campos de las prepartidas
+-->
+<view>
+    <columns>
+        <group name="detail">
+            <column name="idpreasiento" order="100" display="none">
+                <widget type="text" fieldname="idpreasiento" />
+            </column>
+            <column name="id" order="100" display="none">
+                <widget type="text" fieldname="idprevariable" />
+            </column>
+            <column name="Código" numcolumns="1" order="100">
+                <widget type="text" fieldname="codprevariable" required="true" readonly="true" />
+            </column>
+            <column name="Tipo" numcolumns="1" order="110">
+                <widget type="text" fieldname="tipoprevariable" required="true" readonly="true" />
+            </column>
+            <column name="Mensaje" order="130">
+                <widget type="text" fieldname="mensaje" required="true" />
+            </column>
+        </group>
+    </columns>
+</view>
