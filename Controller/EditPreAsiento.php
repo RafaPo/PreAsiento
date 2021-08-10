@@ -38,6 +38,7 @@ use FacturaScripts\Core\Base\DataBase;
  * No se hereda, porque el modelo es distinto (hay 3 modelos).
  * El que se le pasa aquí es el de las variables.
  */
+
 function DeleteLinesOld($Model, &$linesOld, &$linesNew): bool {
     if (empty($linesOld)) {
         return true;
